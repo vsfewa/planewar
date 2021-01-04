@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/bg">
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="@dimen/action_button_width"
+        android:layout_height="@dimen/action_button_height"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/action_btn_restart"
+        android:textSize="@dimen/action_button_text_size"
+        android:background="@drawable/btn_bg"
+        />
+
+    <TextView
+        android:id="@+id/finish_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_restart"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:text="@string/activity_finish_text"
+        android:textSize="@dimen/hello_text_size" />
+
+    <Button
+        android:id="@+id/btn_quit"
+        android:layout_width="@dimen/action_button_width"
+        android:layout_height="@dimen/action_button_height"
+        android:layout_below="@id/btn_restart"
+        android:layout_centerHorizontal="true"
+        android:text="@string/action_btn_quit"
+        android:textSize="@dimen/action_button_text_size"
+        android:background="@drawable/btn_bg"
+        />
+
+    <TextView
+        android:id="@+id/win_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_restart"
+        android:layout_marginBottom="130dp"
+        android:gravity="center"
+        android:text="@string/activity_win_text"
+        android:textSize="@dimen/hello_text_size" />
+</RelativeLayout>
